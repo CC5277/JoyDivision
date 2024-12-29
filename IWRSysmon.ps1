@@ -1,0 +1,1 @@
+Invoke-WebRequest -uri "https://download.sysinternals.com/files/Sysmon.zip" -outfile $Env:UserProfile\Desktop\NotMalware.zip; Expand-Archive $Env:UserProfile\Desktop\NotMalware.zip -DestinationPath $Env:UserProfile\Desktop\NotMalware; rm $Env:UserProfile\Desktop\NotMalware.zip; iex "$Env:UserProfile\Desktop\NotMalware\sysmon64.exe -i -n -accepteula"
